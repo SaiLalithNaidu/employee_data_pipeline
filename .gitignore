@@ -1,0 +1,20 @@
+
+# Terraform downloaded files and local state
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Sensitive local configuration
+.env
+*.tfvars
+*.tfvars.json
+
+# Python generated files
+**/__pycache__/
+*.py[cod]
+
+# Jenkins and local runtime data
+jenkins/
+logs/
