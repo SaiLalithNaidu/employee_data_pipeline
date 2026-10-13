@@ -79,3 +79,5 @@ with DAG(
     )
 
     run_glue >> clear_redshift >> load_redshift >> validate_redshift
+
+    
