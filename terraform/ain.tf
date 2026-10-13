@@ -8,6 +8,14 @@ terraform {
       version = "~> 6.0"
     }
   }
+
+  backend "s3" {
+    bucket       = "employee-data-platform-sai-terraform-state-2026"
+    key          = "employee-data/terraform.tfstate"
+    region       = "ap-southeast-2"
+    encrypt      = true
+    use_lockfile = true
+  }
 }
 
 provider "aws" {
