@@ -1,20 +1,30 @@
 
-# Terraform downloaded files and local state
-**/.terraform/*
+# Terraform local state and runtime files
+**/.terraform/
 *.tfstate
 *.tfstate.*
+*.tfstate.backup
+*.tfplan
+*.tflock
 crash.log
 crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 
 # Sensitive local configuration
 .env
+*.env
 *.tfvars
 *.tfvars.json
 
 # Python generated files
 **/__pycache__/
 *.py[cod]
+*$py.class
 
 # Jenkins and local runtime data
 jenkins/
 logs/
+
